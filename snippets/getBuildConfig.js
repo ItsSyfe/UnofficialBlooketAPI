@@ -1,3 +1,11 @@
+/**
+ * SPDX-FileCopyrightText: 2022, zastix
+ * 
+ * SPDX-License-Identifier: Modifided 3-Clause BSD (see LICENSES/BlooketCheatsTools-LICENSE)
+ * 
+ * The following functions have been modified from the original source code but still retains the original copyright and license.
+ */
+
 // For full transparency, this is not a function created by me and requires you to follow the license on zastix's repository for using it in your own work.
 const getBuildConfig = () =>
     new Promise((resolve, reject) => {

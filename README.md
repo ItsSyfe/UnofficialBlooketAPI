@@ -67,7 +67,7 @@ async function importKey(aesKey) {
     }, false, ["encrypt", "decrypt"])
 }
 
-async function encrypt(json, aesKey) {
+async function encrypt(json) {
 	// create a UInt8Array (blocks of the data) from the json string to pass into WebCrypto
     const blocks = await (new TextEncoder).encode(JSON.stringify(json));
 	// generate a random IV using the WebCrypto API
@@ -76,7 +76,7 @@ async function encrypt(json, aesKey) {
     const ciphertext = await window.crypto.subtle.encrypt({
         name: "AES-GCM",
         iv
-    }, await importKey(aesKey), blocks);
+    }, await importKey((await getBuildConfig()).aesKey), blocks);
 	// combines the IV and attaches it to the front of the combined cipher text and then encodes the whole thing in Base64
     return window.btoa(Array.from(iv).map(char => String.fromCharCode(char)).join("") + Array.from(new Uint8Array(ciphertext)).map(char => String.fromCharCode(char)).join(""));
 }
@@ -93,7 +93,7 @@ async function importKey(aesKey) {
     }, false, ["encrypt", "decrypt"])
 }
 
-async function decrypt(encoded, aesKey) {
+async function decrypt(encoded) {
 	// decode the Base64 encoded data
     let encrypted = await window.atob(encoded);
 	// split the IV and ciphertext apart
@@ -105,7 +105,7 @@ async function decrypt(encoded, aesKey) {
     let blocks = await window.crypto.subtle.decrypt({
         name: "AES-GCM",
         iv
-    }, await importKey(aesKey), Uint8Array.from(ciphertext.split("")
+    }, await importKey((await getBuildConfig()).aesKey), Uint8Array.from(ciphertext.split("")
         .map(char => char.charCodeAt(0))));
 	// return the decrypted data as a json object
     return (new TextDecoder).decode(blocks);
