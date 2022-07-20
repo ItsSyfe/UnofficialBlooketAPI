@@ -1,8 +1,9 @@
 # POST /users/login
 
-Login to user account, requires a cookie to be sent with it and makes the cookie into an authenticated session if ``success`` is true.
+Login to user account, requires a cookie to be sent with it and makes the cookie into an authenticated session if `success` is true.
 
 Note:
+
 - Requires body to be encrypted.
 
 ## Example request
@@ -21,6 +22,7 @@ Cookie: {AuthCookie}
 ```
 
 Variables:
+
 - Username: Username or email of the account.
 - Password: Password of the account.
 

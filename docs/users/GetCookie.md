@@ -2,7 +2,7 @@
 
 Get's a cookie to be used in a login request, cookie needs to be saved and reused for future authenticated requests.
 
-Throughout the documentation the returned cookie from this request is referred to as the ``AuthCookie``.
+Throughout the documentation the returned cookie from this request is referred to as the `AuthCookie`.
 
 ## Example request
 

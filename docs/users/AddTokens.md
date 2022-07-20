@@ -3,6 +3,7 @@
 This endpoint is used to request the server to add rewards to a user, it is used at the end of a game.
 
 Note:
+
 - Requires an authenticated user.
 - Requires body to be encrypted.
 
@@ -23,6 +24,7 @@ Cookie: {AuthCookie}
 ```
 
 Variables:
+
 - Username: Username of the account, can be gotten from [login](./Login.md) request or [get user](./DOESNTEXIST.md).
 - Token: Amount of tokens to add to the user.
 - XP: Amount of XP to add to the user.
