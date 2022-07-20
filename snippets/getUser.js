@@ -4,4 +4,7 @@ async function getUserFromUsername(username) {
   }).then((res) => res.json());
 }
 
-await getUserFromUsername("Ben");
+/**
+ * usage is as follows:
+ * await getUserFromUsername(username)
+ */
