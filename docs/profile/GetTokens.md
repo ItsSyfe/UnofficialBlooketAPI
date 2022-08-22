@@ -1,6 +1,6 @@
 # GET /users/tokens
 
-Gets a strubg with token count for the current logged in user.
+Get a string with token count for the current logged in user.
 
 Note:
 

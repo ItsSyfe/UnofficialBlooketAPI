@@ -1,3 +1,6 @@
+<h2 align="center">⚠️ UNDER CONSTRUCTION, A LOT STILL NEEDS TO BE DOCUMENTED ⚠️</h2>
+<h2 align="center">HERE BE DRAGONS</h2>
+
 # Unofficial Blooket API Documentation
 
 This is a repository with everything you need to know about the Blooket API (blooket.com).

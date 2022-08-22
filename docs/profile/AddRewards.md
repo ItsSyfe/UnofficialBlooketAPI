@@ -25,9 +25,9 @@ Cookie: {AuthCookie}
 
 Variables:
 
-- Username: Username of the account, can be gotten from [login](./Login.md) request or [get user](./DOESNTEXIST.md).
-- Token: Amount of tokens to add to the user.
-- XP: Amount of XP to add to the user.
+- Username: Username of the account, can be gotten from [login](../auth/Login.md) request or [get user](./GetUser.md).
+- Token: Amount of tokens to add to the user (maximum of 500 per day).
+- XP: Amount of XP to add to the user (maximum of 300 per day).
 
 ## Example response
 

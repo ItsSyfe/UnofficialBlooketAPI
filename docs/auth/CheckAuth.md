@@ -1,6 +1,6 @@
 # GET /users/check-auth
 
-Get's a cookie to be used in a login request, cookie needs to be saved and reused for future authenticated requests.
+Get a cookie to be used in a login request, cookie needs to be saved and reused for future authenticated requests.
 
 Not entirely sure what the difference between having a session and being authed is as they seem one and the same but this is called by the client after verifying the session.
 

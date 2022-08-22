@@ -24,7 +24,7 @@ Cookie: {AuthCookie}
 
 Variables:
 
-- Username: Username of the account, can be gotten from [login](./Login.md) request or [get user](./DOESNTEXIST.md).
+- Username: Username of the account, can be gotten from [login](../auth/Login.md) request or [get user](./GetUser.md).
 - BoxName: Name of the box you want to open.
 
 ## Example response

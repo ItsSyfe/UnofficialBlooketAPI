@@ -19,7 +19,7 @@ Cookie: {AuthCookie}
 
 ```
 
-Body needs to be nothing but encrypted
+An empty body must be encrypted and sent.
 
 ## Example response
 
